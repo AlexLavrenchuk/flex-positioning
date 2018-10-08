@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+body{
+	font-family: 'Lato';
+}
+h1,
+h2,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+/*-------------------start-----------------------*/
+
+.wrapper {
+	padding: 0 50px;
+}
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+	padding-top: 80px;
+}
+
+.titel {
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: #222;
+	letter-spacing: -0.25px;
+	margin-bottom: 18px;
+}
+
+.subtitel {
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	color: #9f9f9f;
+	letter-spacing: -0.25px;
+	margin-bottom: 59px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.first {
+	justify-content: space-between;
+}
+
+.second-item {
+	display: flex;
+	justify-content: space-between;
+	width: 555px;
+	flex-wrap: wrap;
+}
+
+.second {
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.third {
+	justify-content: space-around;
+}
+
+.column {
+	margin-bottom: 60px;
+}
+
+.product-description {
+	display: flex;
+	flex-direction: column;
+	margin-top: -3px;
+	padding: 14px;
+	
+}
+
+.product-description h5 {
+	font-weight: normal;
+	font-size: 14px;
+	color: #222;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.stars-and-price {
+	display: flex;
+	justify-content: space-between;
+}
+
+.the-price-of-the-product {
+	font-weight: bold;
+	font-size: 16px;
+	color: #f16d7f;
+}
+
+.star {
+	font-size: 15px;
+	color: #e4af48;
+	letter-spacing: -3px;
+}
+
+/*-------------------media-----------------------*/
+
+@media (max-width: 1300px){
+	.second-item {
+		width: 100%;
+		justify-content: space-around;
+	}
+	.second {
+		margin-bottom: 0;
+	}
+	.column {
+		padding: 0 15px;
+	}
+}
+@media (max-width: 992px){
+	.first{
+		justify-content: space-around;
+	}
+}	
